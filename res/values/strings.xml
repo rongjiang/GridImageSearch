@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GridImageSearch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_search">Search</string>
+    <string name="query_hint">Enter search term</string>
+    <string name="title_activity_image_display">ImageDisplayActivity</string>
+    <string name="title_activity_advanced_search">AdvancedSearchActivity</string>
+	<string-array name="query_color_array">
+		<item>pink</item>
+		<item>black</item>
+		<item>yello</item>
+		<item>green</item>
+	</string-array>
+</resources>

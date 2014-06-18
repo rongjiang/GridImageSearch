@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtOptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="19dp"
+        android:text="Advanced Search Options" />
+
+    <Spinner
+        android:id="@+id/spColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtOptionTitle"
+        android:layout_below="@+id/txtOptionTitle"
+        android:entries="@array/query_color_array"
+        
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="25dp" />
+
+
+    <EditText
+        android:id="@+id/etSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spColor"
+        android:layout_below="@+id/spColor"
+        android:layout_marginTop="24dp"
+        android:hint="Site to search for"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spColor"
+        android:layout_marginBottom="38dp"
+        android:onClick="onSave"
+        android:text="Save" />
+
+</RelativeLayout>
