@@ -10,12 +10,7 @@ public class QueryOption implements Serializable {
 	String siteRestriction;
 	
 	public QueryOption() {}
-	
-	public QueryOption(String color, String siteRestriction) {
-		this.imageColor = color;
-		this.siteRestriction = siteRestriction;
-	}
-	
+		
 	public String getImageColor() {
 		return imageColor;
 	}

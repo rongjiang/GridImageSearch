@@ -12,37 +12,82 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="23dp"
         android:layout_marginTop="19dp"
-        android:text="Advanced Search Options" />
+        android:text="Advanced Search Options:" />
 
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spSize"
+        android:layout_toRightOf="@+id/typeLabel"
+        android:layout_alignTop="@+id/typeLabel"
+        android:entries="@array/query_type_array" />
+    
     <Spinner
         android:id="@+id/spColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/spType"
+        android:layout_toRightOf="@+id/colorLabel"
+        android:layout_alignTop="@+id/colorLabel"
+        android:entries="@array/query_color_array" />
+
+    <TextView
+        android:id="@+id/sizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/txtOptionTitle"
         android:layout_below="@+id/txtOptionTitle"
-        android:entries="@array/query_color_array"
-        
-        android:layout_marginRight="23dp"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="16dp"
+        android:text="Image Size: " />
 
+    <Spinner
+        android:id="@+id/spSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOptionTitle"
+        android:layout_alignTop="@+id/sizeLabel"
+        android:layout_toRightOf="@+id/sizeLabel"
+        android:entries="@array/query_size_array" />
+
+    <TextView
+        android:id="@+id/colorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spType"
+        android:layout_alignLeft="@+id/txtOptionTitle"
+        android:layout_marginBottom="15dp"
+        android:text="Image Color: " />
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spSize"
+        android:layout_alignLeft="@+id/txtOptionTitle"
+        android:layout_marginBottom="16dp"
+        android:text="Image Type: " />
 
     <EditText
         android:id="@+id/etSite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spColor"
+        android:layout_alignLeft="@+id/colorLabel"
         android:layout_below="@+id/spColor"
-        android:layout_marginTop="24dp"
-        android:hint="Site to search for"
-        android:ems="10" />
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Site to search for" >
+
+        <requestFocus />
+    </EditText>
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/spColor"
-        android:layout_marginBottom="38dp"
+        android:layout_below="@+id/etSite"
+        android:layout_marginTop="36dp"
+        android:layout_toRightOf="@+id/txtOptionTitle"
         android:onClick="onSave"
         android:text="Save" />
 

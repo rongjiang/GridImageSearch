@@ -10,6 +10,8 @@ package com.example.gridimagesearch;
 public final class R {
     public static final class array {
         public static final int query_color_array=0x7f050000;
+        public static final int query_size_array=0x7f050001;
+        public static final int query_type_array=0x7f050002;
     }
     public static final class attr {
     }
@@ -18,15 +20,20 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int btnSave=0x7f080003;
-        public static final int btnSearch=0x7f080006;
-        public static final int etQuery=0x7f080005;
-        public static final int etSite=0x7f080002;
-        public static final int gvResults=0x7f080007;
-        public static final int ivResult=0x7f080004;
-        public static final int miAdvanceSearch=0x7f080008;
-        public static final int spColor=0x7f080001;
+        public static final int btnSave=0x7f080008;
+        public static final int btnSearch=0x7f08000b;
+        public static final int colorLabel=0x7f080005;
+        public static final int etQuery=0x7f08000a;
+        public static final int etSite=0x7f080007;
+        public static final int gvResults=0x7f08000c;
+        public static final int ivResult=0x7f080009;
+        public static final int miAdvanceSearch=0x7f08000d;
+        public static final int sizeLabel=0x7f080006;
+        public static final int spColor=0x7f080004;
+        public static final int spSize=0x7f080002;
+        public static final int spType=0x7f080001;
         public static final int txtOptionTitle=0x7f080000;
+        public static final int typeLabel=0x7f080003;
     }
     public static final class layout {
         public static final int activity_advanced_search=0x7f030000;

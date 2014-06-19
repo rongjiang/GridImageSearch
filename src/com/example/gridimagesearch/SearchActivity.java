@@ -124,9 +124,17 @@ public class SearchActivity extends Activity {
 				"rsz=8&start=" + offset + "&v=1.0&q=" + Uri.encode(term));
     	if (queryOption != null) {
     		String color = queryOption.getImageColor();
+    		String type = queryOption.getImageType();
+    		String size = queryOption.getImageSize();
     		String site = queryOption.getSiteRestriction();
     		if (color != null && !"".equals(color)) {
     			queryStr.append("&imgcolor=" + color);
+    		}
+    		if (type != null && !"".equals(type)) {
+    			queryStr.append("&imgtype=" + type);
+    		}
+    		if (size != null && !"".equals(size)) {
+    			queryStr.append("&imgsize=" + size);
     		}
     		if (site != null && !"".equals(site)) {
     			queryStr.append("&as_sitesearch=" + site);
@@ -147,10 +155,8 @@ public class SearchActivity extends Activity {
     
     // Handle the result once the activity returns a result
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-    	if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
-    		
-    		queryOption = (QueryOption) data.getSerializableExtra("options");
-    		
+    	if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {    		
+    		queryOption = (QueryOption) data.getSerializableExtra("options");    		
     	}
     }
 }

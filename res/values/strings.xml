@@ -13,4 +13,16 @@
 		<item>yello</item>
 		<item>green</item>
 	</string-array>
+	<string-array name="query_size_array">
+		<item>icon</item>
+		<item>small</item>
+		<item>xxlarge</item>
+		<item>huge</item>
+	</string-array>
+	<string-array name="query_type_array">
+		<item>face</item>
+		<item>photo</item>
+		<item>clipart</item>
+		<item>lineart</item>
+	</string-array>
 </resources>
